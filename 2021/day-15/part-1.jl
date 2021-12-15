@@ -11,6 +11,5 @@ function main()
         route[i, j] = (mat[i][j] - '0') + min(route[i, j - 1], route[i - 1, j])
     end
     route[length(mat), length(mat[1])] |> println
-    route |> display
 end
 main()
